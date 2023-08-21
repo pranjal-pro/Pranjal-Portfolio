@@ -1,0 +1,1197 @@
+/* All content */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inknut Antiqua;
+}
+body{
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+::-webkit-scrollbar{
+    background: rgba(238, 253, 255, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 14.5px;
+    background: rgba(238, 253, 255, 0.50);
+}
+.glass{
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(141deg, rgba(255, 255, 255, 0.15) 0%, rgba(171, 171, 171, 0.15) 100%);
+    filter: blur(0.125px);
+    backdrop-filter: blur(0.125px);
+}
+.glass:hover{
+        background: linear-gradient(141deg, rgba(255, 255, 255, 0.3) 0%, rgba(171, 171, 171, 0) 100%);
+        box-shadow: white -2px -2px 10px black 2px 2px 10px;
+}
+
+.nextpage{
+    height: 35px;
+}
+
+/* navbar */
+#navbar{
+    width: 100%;
+    background: linear-gradient(90deg, #000 0%, #252525 100%);
+    height: 35px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+#navbar .me{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#navbar .me img{
+    background-image: url("../../../Pictures/ME.jpg");
+    background-color:lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95%;
+    border-radius: 50%;
+    margin: .5rem .5rem 0 1rem;
+}
+#navbar .me .pranjal{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 .5rem;
+}
+#navbar .me .saxena{
+    color: #C2C0C0;
+    font-family: Inria Serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#navbar .list{
+    display: flex;
+    
+}
+#navbar .list a{
+    color: #D3D3D3;
+    font-family: Inknut Antiqua;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1rem;
+    text-decoration: none;
+}
+#navbar .list a:hover{
+    color: #868686;
+    scale: 1.1;
+}
+#navbar .check{
+    display: none;
+}
+/* #navbar .check input{
+    display: none;
+} */
+
+/* page1 */
+#page1{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page1 .me{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-left: 7.5vw; */
+}
+#page1 .me img{
+    height: 120%;
+    border-radius: 50%;
+    margin-left: 0%;
+    flex-shrink: 1;
+    align-self: flex-start;
+    position: relative;
+    right: 8.25vw;
+}
+#page1 .me .about {
+    height: 100%;
+    padding-left: 5%;
+    margin-right: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#page1 .me .about .pranjal{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    /* font-size: 7.5rem; */
+    font-size: 15vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#page1 .me .about .saxena{
+    color: #909090;
+    font-family: Inria Serif;
+    /* font-size: 7.5rem; */
+    font-size: 15vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#page1 .me .about .branch{
+    border-right: #ffffff;
+    color: #999;
+    font-family: Inria Serif;
+    /* font-size: 1.5rem; */
+    font-size: 3.5vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 10% 0;
+}
+#page1 .me .about .branch span{
+    color: #ffffff;
+    font-family: Inria Serif;
+    /* font-size: 1.5rem; */
+    font-size: 3.5vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 10% 0;
+}
+
+/* page2 */
+#page2{
+    height: 100vh;
+}
+#page2 .line{
+    margin: 5vh 0 0 7.5vw;
+    width: .25vw;
+    height: 60vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+#page2 .line .circle{
+    width: 2vh;
+    height: 2vh;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#page2 .content{
+    margin: 2.5vh 0 0 12vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    position: relative;
+}
+#page2 .content .item1{
+    height: 67.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+#page2 .content .item1 .class{
+    padding: 1vh 0;
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 8vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+#page2 .content .item1 .class .class-subHead{
+    display: inline;
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#page2 .content .item1 .class .class-subHead.college{
+    padding-left: 1vw;
+}
+
+#page2 .content .item2{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+#page2 .content .item2 .score.college{
+    margin-top: 4vh;
+}
+#page2 .content .item2 .score{
+    margin:1vh 6vw 0 25vw;
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 8vh;
+    font-style: normal;
+    flex-shrink: 0;
+    font-weight: 700;
+    line-height: normal;
+}
+#page2 .content .item2 .score .score-subHead{
+    display: inline;
+    padding: 1vh 1vw;
+    color: #D5D5D5;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#page2 .content .item3{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 27.5vw;
+    top: 12.5vh;
+}
+#page2 .content .item3 .school.college{
+    margin-top: 6vh;
+}
+#page2 .content .item3 .school{
+    width: 40vw;
+    height: min-content;
+    border-radius: 500px 5px 5px 500px;
+}
+#page2 .content .item3 .school .div{
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#page2 .content .item3 .school .name{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 3vh;
+    margin-top: 4.6vh;
+    font-style: normal;
+    font-weight: 700;
+    height: 5vh;
+}
+#page2 .content .item3 .school .location{
+    color: #D5D5D5;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3vh;
+}
+#page2 .content .item3 .school .session{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3vh;
+}
+#page2 .content .item3 .school img{
+    margin: 1vh;
+    float: left;
+    height: 10vh;
+    border-radius: 50%;
+}
+#page2 .content .item3 .school .school-subHead{
+    display: inline;
+    padding: 1vh 2vw;
+    color: #D5D5D5;
+    font-family: Inria Serif;
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#page2 .content .item3 .school:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
+}
+
+
+/* page3 */
+#page3{
+    background-color: #000;
+}
+#page3 .skills{
+    color: #D7D7D7;
+    margin: 2vw;
+    width: 75vw;
+    padding: .5vh .5vw;
+    font-family: Inria Serif;
+    font-size: 12vh;
+    font-weight: 700;
+    line-height: normal;
+}
+#page3 .grid{
+    width: 96vw;
+    margin: 5vh 2vw;
+    display: grid;
+    grid-template-areas:
+        'frontend html css js bootstrap'
+        'programming c cpp java python'
+        'designing figma canva . .'
+        'ms-office ppt excel word .';
+    grid-gap: 1vw;
+    grid-row-gap: 2vw;
+    position: relative;
+}
+#page3 .grid .about{
+    height: 100%;
+    width: 20vw;
+    padding: 2vh;
+    position: relative;
+}
+#page3 .grid .about .heading{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#page3 .grid .about .text{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    padding: 2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.5vh;
+    grid-area: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+#page3 .grid .about:hover{
+    display: block;
+    position: absolute;
+    width: 95vw;
+    height: 16vw;
+    color: #C2C0C0;
+    line-height: 1.5vh;
+    padding-bottom: 0;
+    z-index: 5;
+    background-color: #000;
+    overflow: auto;
+}
+#page3 .grid .frontend{grid-area: frontend;}
+#page3 .grid .html{grid-area: html; }
+#page3 .grid .css{grid-area: css;}
+#page3 .grid .js{grid-area: js;}
+#page3 .grid .bootstrap{grid-area: bootstrap;}
+#page3 .grid .programming{grid-area: programming;}
+#page3 .grid .c{grid-area: c;}
+#page3 .grid .cpp{grid-area: cpp;}
+#page3 .grid .java{grid-area: java;}
+#page3 .grid .python{grid-area: python;}
+#page3 .grid .designing{grid-area: designing;}
+#page3 .grid .figma{grid-area: figma;}
+#page3 .grid .canva{grid-area: canva;}
+#page3 .grid .ms-office{grid-area: ms-office;}
+#page3 .grid .ppt{grid-area: ppt;}
+#page3 .grid .excel{grid-area: excel;}
+#page3 .grid .word{grid-area: word;}
+
+#page3 .grid .html svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.95);}
+#page3 .grid .css svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.75);}
+#page3 .grid .js svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.6);}
+#page3 .grid .bootstrap svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.85);}
+#page3 .grid .c svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.9);}
+#page3 .grid .cpp svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.9);}
+#page3 .grid .java svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.98);}
+#page3 .grid .python svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.5);}
+#page3 .grid .figma svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.85);}
+#page3 .grid .canva svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.8);}
+#page3 .grid .ppt svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.9);}
+#page3 .grid .excel svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.85);}
+#page3 .grid .word svg circle{stroke-dasharray: calc(15vw*.75*3.1415*.7);}
+
+#page3 .grid .skill{
+    width: 15vw;
+    height: 15vw;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: flex-start;
+}
+#page3 .grid .skill .bg-circle{
+    width: 70%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+#page3 .grid .skill .knowledge-range{
+    width: 75%;
+    height: 75%;
+    margin: 25%;
+    border-radius: 50%;
+    position: absolute;
+}
+#page3 .grid .skill .knowledge-range svg{
+    width: 100%;
+    height: 100%;
+    overflow:visible;
+}
+#page3 .grid .skill .knowledge-range circle{
+    position: relative;
+    cx: 50%;
+    cy: 50%;
+    r: 50%;
+    fill: none;
+    stroke-linecap: round;
+    transform: rotate(90deg) translateY(-100%);
+    stroke: #ffffff;
+    stroke-width: 1.75vh;
+    fill: none;
+}
+#page3 .grid .skill img{
+    height: 50%;
+    position: absolute;
+}
+#page3 .grid .skill .name{
+    color: #D7D7D7;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 4vh;
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    top: 2vh;
+}
+#page3 .grid .skill:hover .knowledge-range circle{
+    animation: showSkill .5s 100ms ease-in;
+}
+@keyframes showSkill {
+    0%{
+        stroke-dashoffset:  calc(15vw*.75*3.1415);
+    }
+}
+
+/* projects */
+#projects {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 5vw;
+    width: 90vw;
+    color: #D7D7D7;
+}
+#projects .project{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 10vh;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5vh 0;
+}
+#projects .text{
+    color: #c8c8c8;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    font-weight: 200;
+    line-height: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1vw;
+}
+#projects .d-md-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 98vw; */
+    /* height: 60vh; */
+}
+#projects .d-md-flex div.card{
+    min-width: 200px;
+    height: 22.5vw;
+    width: 10vw;
+    margin: .5vw 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(141deg, rgba(255, 255, 255, 0.15) 0%, rgba(171, 171, 171, 0.15) 100%);
+    filter: blur(0.125px);
+    backdrop-filter: blur(0.125px);
+    /* background-color: gray; */
+}
+#projects .d-md-flex div.card img{
+    height: 50%;
+    object-fit: cover;
+}
+#projects .d-md-flex div.card h2{
+    font-size: 1.5vw;
+    color: #D3D3D3;
+    margin: .5vw 0;
+}
+#projects .d-md-flex div.card h6{
+    font-size: .75vw;
+    margin:0;
+    color: #D3D3D3;
+}
+#projects .d-md-flex div.card p{
+    font-size: .5vw;
+    margin: 0;
+    color: #D3D3D3 !important;
+}
+#projects .d-md-flex div.card a{
+    font-size: .75vw;
+    margin: 0 40%;
+    position: absolute;
+    bottom: 1vh;
+    /* color: #D3D3D3; */
+
+}
+#projects .d-md-flex div.card:hover{
+    transform: translateX(-2px) translateY(-2px) scale(1.05);
+    transition: .5s 100ms ease;
+}
+
+/* page4 */
+#page4{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 5vw;
+    width: 90vw;
+    color: #D7D7D7;
+}
+#page4 .contact{
+    color: #D7D7D7;
+    font-family: Inria Serif;
+    font-size: 10vh;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 1vw;
+    margin: 5vh 0;
+}
+#page4 .text{
+    color: #c8c8c8;
+    font-family: Inria Serif;
+    font-size: 2vh;
+    margin-left: 1.5vw;
+    font-weight: 200;
+    line-height: normal;
+}
+#page4 .info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 5%;
+    padding: 5vh 5vw;
+}
+#page4 .info .detail{
+    display: flex;
+    margin: 1vh 0;
+}
+#page4 .info .detail .logo{
+    height: 2.5vh;
+    width: 2.5vh;
+    margin: 0 2vw;   
+}
+#page4 .info .detail .value{
+    color: #D7D7D7;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#page4 .info .detail .value a{
+    color: #D7D7D7;
+    text-align: center;
+    font-family: Inria Serif;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#page4 .info .detail:hover{
+    transform: scale(1.1) translateX(3.5vw);
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Inria Serif;
+    font-size: 2.5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #000000;
+}
+footer a{
+    font-family: Inria Serif;
+    font-size: 2.5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+footer .toTop{
+    background-color: #252525;
+    width: 100%;
+    text-align: center;
+}
+footer .toTop i{
+    margin-right: 10px;
+}
+footer .hr{
+    margin-bottom: 10px;
+    border-top: #D3D3D3 solid 1px;
+    width: 100%;
+}
+footer .terms{
+    width: 90%;
+    color: #D5D5D5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .terms a{
+    margin: 5px;
+}
+footer div.reserve{
+    margin-top: 10px;
+    font-family: Inria Serif;
+    font-size: 2.5vh;
+    font-style: normal;
+    font-weight: 400;
+    color: #D5D5D5;
+    line-height: normal;
+}
+
+@media (max-aspect-ratio: 1.76) {
+    #page1 .me{
+        height: 40%;
+        width: 85%;
+    }
+    #page1 .me .about .pranjal{
+        font-size: 11vh;
+    }
+    #page1 .me .about .saxena{
+        font-size: 11vh;
+    }
+    #page1 .me .about .branch{
+        font-size: 2.25vh;
+        padding: 10% 0;
+    }
+    #page2 .content .item1 .class{
+        font-size: 5vh;
+        
+    }
+    #page2 .content .item2 .score{
+        margin:1vh 6vw 0 25vw;
+        font-size: 5vh;
+    }
+    #page2 .content .item2{
+        height: 72.5vh;
+    }
+    #page2 .content .item3{
+        height: 75vh;
+        top: 10vh;
+        left: .25vw;
+    }
+    #page2 .content .item3 .school{
+        width: 70vw;
+        border-radius: 500px 5px 5px 500px;
+        left: 30vh;
+    }
+    #page3 .grid{
+        grid-gap: 1vw;
+        width: 95vw;
+    }
+    #page3 .grid .skill .knowledge-range circle{
+        stroke-width: 1vh;
+    }
+    #page3 .grid .skill .name{
+        font-size: 3vh;
+        top: 5vh;
+    }
+}
+@media (max-aspect-ratio: 1.05) {
+    .nextpage{height: 50px;}
+    #navbar{
+        height: 50px;
+    }
+    #navbar .check input{display: none;}
+    #navbar .check label .fa-xmark{display: none;}
+    #navbar .check input:checked~ label .fa-xmark{
+        display:inline;
+        position: relative;
+        bottom: 5px;
+        right: 10px;
+    }
+    #navbar .check input:checked~ label .fa-bars{display: none;}
+    #navbar:has(.check>input:checked){
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr 1fr;
+        height: min-content;
+        width: 100%;
+        background: linear-gradient(90deg, #00000060 0%, #ffffff1f 100%);
+        backdrop-filter: blur(15px);
+    }
+    #navbar .me{
+        height: 38px;
+        align-self: flex-start;
+        justify-self: start;
+        z-index: 1;
+    }
+    #navbar .check{
+        display: inline;
+        color: #C2C0C0;
+        font-size: 35px;
+        align-self: flex-start;
+        justify-self: flex-end;
+        z-index: 1;
+    }
+    #navbar .list{
+        display: none;
+    }
+    #navbar:has(.check>input:checked) .list{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        border: #25252579 solid ;
+    }
+    #navbar .list a{
+        margin: 0;
+        padding: 0vh 20vw;
+        width: 100%;
+        border-top: #25252563 solid;
+    }
+    #page1 .me{
+        height: 60vh;
+        width: 60vw;
+        margin-top: 20vh;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-self: center;
+        flex-direction: column;
+        position: relative;
+    }
+    #page1 .me img{
+        width: 40vw;
+        height: 40vw;
+        position: absolute;
+        right: 10vw;
+        top: -20vw;
+    }
+    #page1 .me .about {
+        height: 80%;
+        margin: auto;
+        margin-top: 20vw;
+    }
+    #page1 .me .about .pranjal{
+        font-size: 12vw;
+    }
+    #page1 .me .about .saxena{
+        font-size: 12vw;
+    }
+    #page1 .me .about .branch{
+        font-size: 3vw;
+    }
+    #page1 .me .about .branch span{
+        font-size: 4vw;
+    }
+    #page1 .credit{
+        align-self: end;
+        position: relative;
+        top: 10vw;
+        right: 1vw;
+        color: #D7D7D7;
+        text-align: right;
+        font-size: 1.5vw;
+        font-family: Inria Serif;
+
+        font-weight: 400;
+        line-height: 1.5vw;
+    }
+    #page2 .content .item1 .class{
+        padding: 1vh 0;
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #page2 .content .item1 .class .class-subHead{
+        display: inline;
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    #page2 .content .item2 .score{
+        margin: 7.5vh 6vw 0 15vw;
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 6vw;
+        font-style: normal;
+        flex-shrink: 0;
+        font-weight: 600;
+        line-height: normal;
+    }
+    #page2 .content .item2 .score .score-subHead{
+        display: inline;
+        padding: 1vh 1vw;
+        color: #D5D5D5;
+        font-family: Inria Serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    #page2 .content .item3{
+        height: 78.5vh;
+    }
+    #page2 .content .item3 .school{
+        display: block;
+        width: 80vw;
+        margin-left: 0vw;
+        margin-top: 5vh;
+        margin-right: 0;
+        height: min-content;
+        border-radius: 500px 5px 5px 500px;
+    }
+    #page2 .content .item3 .school.college{
+        margin-top: 0;
+    }
+    #page2 .content .item3 .school .name{
+        font-size: 3vw;
+    }
+    #page2 .content .item3 .school .location{
+        font-size: 2vw;
+    }
+    #page2 .content .item3 .school .session{
+        font-size: 2vw;
+    }
+    #page2 .content .item3 .school img{
+        margin: 1vw;
+        float: left;
+        height: 15vw;
+        border-radius: 50%;
+    }
+    #page3 .skills{
+        color: #D7D7D7;
+        margin: 2vw;
+        width: 75vw;
+        padding: .5vh .5vw;
+        font-family: Inria Serif;
+        font-size: 10vw;
+
+        font-weight: 600;
+        line-height: normal;
+    }
+    #page3 .grid{
+        width: 92vw;
+        margin: 5vh 2vh;
+        display: grid;
+        grid-template-areas:
+            'frontend frontend frontend frontend' 
+            'html css js bootstrap'
+            'programming programming programming programming'
+            'c cpp java python'
+            'designing designing designing designing'
+            'figma canva . .'
+            'ms-office ms-office ms-office ms-office '
+            'ppt excel word .';
+        grid-gap: 1vw;
+    }
+    #page3 .grid .about{
+        height: 80%;
+        width: 55vw;
+        padding: 2vw;
+    }
+    #page3 .grid .about .heading{
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 4.5vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    #page3 .grid .about .text{
+        display: none;
+    }
+    #page3 .grid .about:hover{
+        height: 80%;
+        width: 55vw;
+        padding: 2vw;
+        display: block;
+        position: relative;
+        color: #C2C0C0;
+        line-height: 1.5vh;
+        background-color: transparent;
+        overflow: hidden;
+    }
+    #page3 .grid .skill{
+        width: 20vw;
+        height: 20vw;
+        margin: 0 auto 10vw auto;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        align-self: flex-start;
+    }
+    #page3 .grid .skill:hover{
+        transform: scale(1.1);
+    }
+    #page3 .grid .skill .name{
+        color: #D7D7D7;
+        text-align: center;
+        font-family: Inria Serif;
+        font-size: 4vw;
+        align-self: flex-end;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        position: relative;
+        top: 8vw;
+    }
+    #page3 .grid .html svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.95);}
+    #page3 .grid .css svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.75);}
+    #page3 .grid .js svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.6);}
+    #page3 .grid .bootstrap svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.85);}
+    #page3 .grid .c svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.9);}
+    #page3 .grid .cpp svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.9);}
+    #page3 .grid .java svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.98);}
+    #page3 .grid .python svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.5);}
+    #page3 .grid .figma svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.85);}
+    #page3 .grid .canva svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.8);}
+    #page3 .grid .ppt svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.9);}
+    #page3 .grid .excel svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.85);}
+    #page3 .grid .word svg circle{stroke-dasharray: calc(20vw*.75*3.1415*.7);}
+
+        /* projects */
+    #projects {
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 5vw;
+        width: 90vw;
+        color: #D7D7D7;
+    }
+    #projects .project{
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 10vw;
+
+        font-weight: 700;
+        line-height: normal;
+        margin: 5vw 0;
+    }
+    #projects .text{
+        color: #c8c8c8;
+        font-family: Inria Serif;
+        font-size: 2vh;
+
+        font-weight: 200;
+        line-height: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        margin-bottom: 1vw;
+    }
+    #projects .d-md-flex{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 98vw; */
+        /* height: 60vh; */
+    }
+    #projects .d-md-flex div.card{
+        min-width: 200px;
+        height: 30vh;
+        width: 10vh;
+        margin: .5vh 0;
+        /* background-color: gray; */
+    }
+    #projects .d-md-flex div.card img{
+        height: 50%;
+        object-fit: cover;
+    }
+    #projects .d-md-flex div.card h2{
+        font-size: 2vh;
+        margin: .5vh;
+    }
+    #projects .d-md-flex div.card h6{
+        font-size: 1vh;
+        margin: 0;
+    }
+    #projects .d-md-flex div.card p{
+        font-size: .8vh;
+        margin: 0;
+    }
+    #projects .d-md-flex div.card a{
+        font-size: 1vh;
+        margin: .5vh 0;
+    }
+    #page4 .contact{
+        font-size: 10vw;
+    }
+    #page4 .info .detail .logo i{
+        font-size: 2.5vw;
+        margin: 0 1vw;
+        padding: 0;
+    }
+    #page4 .info .detail .value{
+        font-size: 2.5vw;
+        margin: 1vh 0;
+        padding: 0;
+    }
+    #page4 .info .detail .value a{
+        font-size: 2.5vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-aspect-ratio: 0.62) {
+    #page1 .me{
+        height: 60vh;
+        width: 60vw;
+        margin-top: 20vh;
+    }
+    #page1 .me img{
+        width: 60vw;
+        height: 60vw;
+        position: absolute;
+        left: 0vw;
+        top: -30vw;
+    }
+    #page1 .me .about {
+        height: 80%;
+        margin: auto;
+        margin-top: 40vw;
+    }
+    #page2 .content .item1 .class{
+        margin-top: 1vh;
+        padding: 3vh 0;
+        font-size: 9vw;
+    }
+    #page2 .content .item1 .class .class-subHead{
+        display: inline;
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    #page2 .content .item1 .class .class-subHead.college{
+        position: absolute;
+        display: block;
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    #page2 .content .item2{
+        height: 69vh;
+        margin-top: 5.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        position: absolute;
+        right: 26vw;
+        top: 0vh;
+        z-index: 1;
+    }
+    #page2 .content .item2 .score{
+        color: #D7D7D7;
+        font-family: Inria Serif;
+        font-size: 6vw;
+        font-style: normal;
+        flex-shrink: 0;
+        font-weight: 600;
+        line-height: normal;
+    }
+    #page2 .content .item2 .score.college{
+        margin-top: 0vh;
+        padding-top: 10vh;
+    }
+    #page2 .content .item3{
+        margin: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 77.5vh;
+        align-items:flex-start;
+        justify-content: space-between;
+        position: absolute;
+        top: 7.5vh;
+    }
+    #page2 .content .item3 .school{
+        height: 15vh;
+        border-radius: 10px;
+        display: flex;
+        align-items:center;
+    }
+    #page2 .content .item3 .school.college{
+        margin: 0;
+        padding: 0;
+        margin-top: 8vh;
+    }
+    #page2 .content .item3 .school .name{
+        font-size: 3vw;
+    }
+    #page3 .grid .skill .knowledge-range circle{
+        stroke-width: 1.25vw;
+    }
+    footer .terms{
+        display: flex;
+        flex-direction: column;
+    }
+}
