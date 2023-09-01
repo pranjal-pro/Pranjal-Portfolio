@@ -1071,6 +1071,7 @@ footer div.reserve{
     #projects .d-md-flex div.card p{
         font-size: .8vh;
         margin: 0;
+        display: none;
     }
     #projects .d-md-flex div.card a{
         font-size: 1vh;
