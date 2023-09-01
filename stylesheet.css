@@ -573,7 +573,7 @@ a{
 }
 #projects .d-md-flex div.card a{
     font-size: .75vw;
-    margin: 0 40%;
+    margin: 0 auto;
     position: absolute;
     bottom: 1vh;
     /* color: #D3D3D3; */
